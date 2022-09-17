@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../App.css';
+import '../Dropdown.css';
 
-export default function Home() {
-  return ( 
-    <>
-      <h1 className='home'>Roshan</h1>
-    </>
+  const Home = () => (
+    <div>
+    <h1 className='home'>Roshan</h1>
+  </div>
   );
-}
+  
+  export default Home;
+

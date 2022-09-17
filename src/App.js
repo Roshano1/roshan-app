@@ -2,13 +2,17 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
-import { BrowserRouter as Router, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Outlet, Navigate } from 'react-router-dom';
+
+import Dropdown, * as ROUTES from './components/Dropdown';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import ContactUs from './components/pages/ContactUs';
 import SignUp from './components/pages/SignUp';
 import Marketing from './components/pages/Marketing';
 import Consulting from './components/pages/Consulting';
+import Design from './components/pages/Design';
+import Development from './components/pages/Development';
 
 function App() {
   return (
@@ -22,6 +26,9 @@ function App() {
       <Route path='/sign-up' component={SignUp} />
       <Route path='/marketing' component={Marketing} />
       <Route path='/consulting' component={Consulting} />
+      <Route path='/design' component={Design} />
+      <Route path='/development' component={Development} />
+      
     </Outlet>
   </Router>
   );
