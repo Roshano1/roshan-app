@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Route, Outlet, Navigate } from 'react-router-dom';
-
 import Dropdown, * as ROUTES from './components/Dropdown';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
@@ -32,6 +31,6 @@ function App() {
     </Outlet>
   </Router>
   );
-}
+  }
 
-export default App
+  export default App;

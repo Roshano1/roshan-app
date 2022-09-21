@@ -1,12 +1,16 @@
 import React from 'react';
 import '../../App.css';
 import '../Dropdown.css';
+import Footer from '../Footer';
 
-  const Home = () => (
-    <div>
-    <h1 className='home'>Roshan</h1>
-  </div>
-  );
-  
+  function Home() {
+    return (
+      <>
+    
+      <Footer/>
+      </>
+    );
+  }
+   
   export default Home;
 
