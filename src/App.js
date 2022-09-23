@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Route, Outlet, Navigate } from 'react-router-dom';
-import Dropdown, * as ROUTES from './components/Dropdown';
+import Dropdown from './components/Dropdown';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import ContactUs from './components/pages/ContactUs';
@@ -16,7 +16,9 @@ import Development from './components/pages/Development';
 function App() {
   return (
     <Router>
+    
     <Navbar />
+     <Dropdown/>
     <Outlet>
       <Route path='/' exact component={Home} />
       <Route path='/services' component={Services} />
@@ -27,9 +29,10 @@ function App() {
       <Route path='/consulting' component={Consulting} />
       <Route path='/design' component={Design} />
       <Route path='/development' component={Development} />
-      
     </Outlet>
+
   </Router>
+  
   );
   }
 
